@@ -209,4 +209,9 @@
   .label {
     text-align: center;
   }
+
+  .filters-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
