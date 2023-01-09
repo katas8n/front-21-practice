@@ -1,54 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css" />
-        <title>Application</title>
-    </head>
-    <body>
-        <div id="app">
-            <header class="header">
-                <nav class="nav">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Login</a>
-                </nav>
-            </header>
-            <section class="container">
-                <aside class="sidebar">
-                    <div class="input-wrapper">
-                        <input
-                            type="text"
-                            placeholder="Searching ..."
-                            class="input"
-                        />
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <title>Application</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <nav class="nav">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Login</a>
+        </nav>
+      </header>
 
-                    <button class="button">Send</button>
-                </aside>
-                <main class="main">
-                    <div class="banner-wrapper">
-                        <div class="banner__title-wrapper">
-                            <span class="banner__title">Sale 25%</span>
-                        </div>
+      <section class="container">
+        <aside class="sidebar">
+          <div class="input-wrapper">
+            <input type="text" placeholder="Searching ..." class="input" />
 
-                        <img
-                            src="./public/vite.svg"
-                            alt="There is nothing here yet"
-                            class="banner"
-                        />
+            <button class="button">Send</button>
+          </div>
 
-                        <div class="button-wrapper">
-                            <button class="button">Get</button>
-                        </div>
-                    </div>
-                </main>
-            </section>
-            <footer class="footer">
-                <span class="footer__title"> Copyright free (c) 2023 </span>
-            </footer>
-        </div>
-    </body>
+          <h3 class="subtitle">Filters</h3>
+
+          <div class="filters">
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 1
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              checkbox 2
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 3
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 4
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 5
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 6
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 7
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 8
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 9
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 10
+            </p>
+          </div>
+
+          <h3 class="subtitle">Filters 2</h3>
+
+          <div class="filters">
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 1
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              checkbox 2
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 3
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 4
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 5
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 6
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 7
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 8
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 9
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 10
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 11
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 12
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 13
+            </p>
+
+            <p class="label">
+              <input type="checkbox" id="" />
+              Checkbox 14
+            </p>
+          </div>
+        </aside>
+
+        <main class="main">
+          <div class="banner-wrapper">
+            <div class="banner__title-wrapper">
+              <span class="banner__title">Sale 25%</span>
+            </div>
+
+            <img
+              src="./public/vite.svg"
+              alt="There is nothing here yet"
+              class="banner"
+            />
+
+            <div class="button-wrapper">
+              <button class="button">Get</button>
+            </div>
+          </div>
+
+          <div class="products">
+            <div class="product">
+              <img
+                src="./public/vite.svg"
+                alt="There is nothing here yet"
+                class="product__img"
+              />
+
+              <h4 class="title">Product description</h4>
+
+              <div class="button-wrapper">
+                <button class="button">Buy</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <img
+                src="./public/vite.svg"
+                alt="There is nothing here yet"
+                class="product__img"
+              />
+
+              <h4 class="title">Product description</h4>
+
+              <div class="button-wrapper">
+                <button class="button">Buy</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <img
+                src="./public/vite.svg"
+                alt="There is nothing here yet"
+                class="product__img"
+              />
+
+              <h4 class="title">Product description</h4>
+
+              <div class="button-wrapper">
+                <button class="button">Buy</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <img
+                src="./public/vite.svg"
+                alt="There is nothing here yet"
+                class="product__img"
+              />
+
+              <h4 class="title">Product description</h4>
+
+              <div class="button-wrapper">
+                <button class="button">Buy</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <img
+                src="./public/vite.svg"
+                alt="There is nothing here yet"
+                class="product__img"
+              />
+
+              <h4 class="title">Product description</h4>
+
+              <div class="button-wrapper">
+                <button class="button">Buy</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <img
+                src="./public/vite.svg"
+                alt="There is nothing here yet"
+                class="product__img"
+              />
+
+              <h4 class="title">Product description</h4>
+
+              <div class="button-wrapper">
+                <button class="button">Buy</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
+
+      <footer class="footer">
+        <span class="footer__title"> Copyright free (c) 2023 </span>
+      </footer>
+    </div>
+  </body>
 </html>

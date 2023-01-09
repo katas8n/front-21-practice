@@ -22,7 +22,7 @@ a {
 .header {
   padding: 2rem;
   background: var(--primary-bg);
-} 
+}
 
 .nav {
   width: 40%;
@@ -32,7 +32,6 @@ a {
 
 .container {
   padding: 2rem;
-  height: 80vh;
   display: flex;
 }
 
@@ -42,11 +41,10 @@ a {
 
 .banner__title {
   font-size: 1.7rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: orchid;
   font-weight: 700;
-  text-shadow: 3px 4px 2px pink; 
-
+  text-shadow: 3px 4px 2px pink;
 }
 
 .banner {
@@ -62,12 +60,12 @@ a {
 
 .button {
   background: darkmagenta;
-  color : white;
+  color: white;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.1rem;
   margin-top: 2rem;
-  padding:.4rem 2rem;
+  padding: 0.4rem 2rem;
 }
 
 .footer {
@@ -78,32 +76,33 @@ a {
   background: var(--primary-bg);
 }
 
-
 .footer__title {
   color: aliceblue;
   font-size: 1.2rem;
 }
 
-@media (max-width:320px) {
-  .header , .footer , .button {
+@media (max-width: 320px) {
+  .header,
+  .footer,
+  .button {
     background: darkcyan;
   }
-  
+
   .nav {
     width: 100%;
-   flex-direction: column;
+    flex-direction: column;
   }
 
   .nav-link {
     display: flex;
     margin-top: 1rem;
-    justify-content: center  ;
+    justify-content: center;
   }
 
   .nav-link:first-child {
     margin-top: 0;
   }
-  
+
   .container {
     flex-direction: column;
   }
@@ -119,7 +118,7 @@ a {
     font-size: 1.4rem;
     border: none;
     border-bottom: 2px solid darkcyan;
-    padding: .2rem;
+    padding: 0.2rem;
   }
 
   .main {
@@ -135,7 +134,6 @@ a {
   .footer__title {
     font-size: 1rem;
   }
-
 }
 
 /* * Add : 
