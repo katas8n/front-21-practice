@@ -8,25 +8,48 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="login-form-wrap">
-  <h2>Login</h2>
-  <form id="login-form">
-    <p>
-    <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
-    </p>
-    <p>
-    <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
-    </p>
-    <p>
-    <input type="submit" id="login" value="Login">
-    </p>
-  </form>
-  <div id="create-account-wrap">
-    <p>Not a member? <a href="#">Create Account</a><p>
-  </div><!--create-account-wrap-->
-</div><!--login-form-wrap-->
-<!-- partial -->
+  <div id="app">
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="./page/login.html" class="nav-link">Login</a>
+        </nav>
+    </header>
+    <section class="container">
+        <aside class="sidebar">
+            <div class="input-wrapper">
+                <input
+                    type="text"
+                    placeholder="Searching ..."
+                    class="input"
+                />
+            </div>
+
+            <button class="button">Send</button>
+        </aside>
+        <main class="main">
+            <div class="banner-wrapper">
+                <div class="banner__title-wrapper">
+                    <span class="banner__title">Sale 25%</span>
+                </div>
+
+                <img
+                    src="./public/vite.svg"
+                    alt="There is nothing here yet"
+                    class="banner"
+                />
+
+                <div class="button-wrapper">
+                    <button class="button">Get</button>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer class="footer">
+        <span class="footer__title"> Copyright free (c) 2023 </span>
+    </footer>
+</div>
   
 </body>
 </html>
