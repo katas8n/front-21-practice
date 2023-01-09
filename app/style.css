@@ -199,6 +199,11 @@ a {
     margin-top: 5rem;
   }
 
+  .main__product{
+    border: 2px solid purple;
+    padding: 1rem;
+  }
+
   .main__img{
     width: 15rem;
   }
