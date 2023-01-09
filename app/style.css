@@ -83,3 +83,68 @@ a {
   color: aliceblue;
   font-size: 1.2rem;
 }
+
+@media (max-width:320px) {
+  .header , .footer , .button {
+    background: darkcyan;
+  }
+  
+  .nav {
+    width: 100%;
+   flex-direction: column;
+  }
+
+  .nav-link {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center  ;
+  }
+
+  .nav-link:first-child {
+    margin-top: 0;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 2px solid darkcyan;
+    padding: .2rem;
+  }
+
+  .main {
+    margin-left: 0;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .footer__title {
+    font-size: 1rem;
+  }
+
+}
+
+/* * Add : 
+  filters (checkboxes , radio-buttons, range , etc.)  ,   
+  main-content (more products)
+  footer (add social-media)
+*/
+
+/* Nazar from 320px to 576px */
+/* Alex from 576px to 768px */
+/* Evgenia from 768px to 1200px */
+/* Lera from 1200 > */
