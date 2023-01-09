@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 1199px) {
   .container {
     height: auto;
   }
@@ -20,10 +20,6 @@
     padding: 0.2rem;
     outline: none;
     transition: 0.3s ease-in-out;
-  }
-
-  .input:focus {
-    border-bottom: 2px rgb(184, 172, 255);
   }
 
   .button {
@@ -102,3 +98,115 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .header,
+  .footer,
+  .button {
+    background: rgb(233, 218, 255);
+    color: black;
+  }
+
+  .input-wrapper {
+    display: flex;
+  }
+
+  .input {
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 2px solid rgb(206, 206, 206);
+    padding: 0.2rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  .button {
+    margin-top: 0;
+    margin-left: 0.5rem;
+    transition: 0.3s ease-in-out;
+    color: black;
+  }
+
+  .button:hover {
+    background: rgb(184, 172, 255);
+    color: rgb(36, 36, 36);
+  }
+
+  .nav-link {
+    background: rgb(217, 192, 255);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    color: black;
+  }
+
+  .nav-link:hover {
+    background: rgb(184, 172, 255);
+  }
+
+  .subtitle {
+    margin: 1.5rem 0;
+  }
+
+  .label {
+    margin: 1rem 0;
+  }
+
+  .label:first-child {
+    margin: 0;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .banner-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+
+  .product {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product__img {
+    width: 100%;
+  }
+
+  .title {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .footer__title {
+    color: inherit;
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .subtitle,
+  .label {
+    text-align: center;
+  }
+}
