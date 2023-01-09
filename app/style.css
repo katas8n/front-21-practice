@@ -148,3 +148,60 @@ a {
 /* Alex from 576px to 768px */
 /* Evgenia from 768px to 1200px */
 /* Lera from 1200 > */
+
+@media (min-width:1200px) {
+
+  .header , .footer , .button {
+    background: rgb(105, 12, 226);
+  }
+
+  .container{
+    height: 85vh;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border: 2px solid purple;
+    padding: 2rem;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner{
+    margin-top: 4rem;
+    width: 25rem;
+  }
+
+  .main__products{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+  }
+
+  .main__img{
+    width: 15rem;
+  }
+
+  
+}
