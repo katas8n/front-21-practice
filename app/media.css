@@ -204,7 +204,7 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 650px) {
   .subtitle,
   .label {
     text-align: center;

@@ -81,7 +81,7 @@ a {
   font-size: 1.2rem;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 650px) {
   .header,
   .footer,
   .button {
