@@ -1,0 +1,157 @@
+@import "./variables.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#app {
+  font-family: sans-serif;
+}
+
+.header {
+  padding: 2rem;
+  background: var(--primary-bg);
+} 
+
+.nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  padding: 2rem;
+  height: 80vh;
+  display: flex;
+}
+
+.main {
+  margin-left: 2rem;
+}
+
+.banner__title {
+  font-size: 1.7rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: orchid;
+  font-weight: 700;
+  text-shadow: 3px 4px 2px pink; 
+
+}
+
+.banner {
+  width: 15rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  background: darkmagenta;
+  color : white;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  padding:.4rem 2rem;
+}
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-bg);
+}
+
+
+.footer__title {
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+
+@media (max-width:320px) {
+  .header , .footer , .button {
+    background: darkcyan;
+  }
+  
+  .nav {
+    width: 100%;
+   flex-direction: column;
+  }
+
+  .nav-link {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center  ;
+  }
+
+  .nav-link:first-child {
+    margin-top: 0;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 2px solid darkcyan;
+    padding: .2rem;
+  }
+
+  .main {
+    margin-left: 0;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .footer__title {
+    font-size: 1rem;
+  }
+
+}
+
+/* * Add : 
+  filters (checkboxes , radio-buttons, range , etc.)  ,   
+  main-content (more products)
+  footer (add social-media)
+*/
+
+/* Nazar from 320px to 576px */
+/* Alex from 576px to 768px */
+/* Evgenia from 768px to 1200px */
+Lera from 1200 >
+
+
+
+
+
+
+
