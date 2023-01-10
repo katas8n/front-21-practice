@@ -138,6 +138,9 @@ a {
 
 }
 
+@media (max-width:768px) and (min-width:576px) {
+	
+}
 /* * Add : 
   filters (checkboxes , radio-buttons, range , etc.)  ,   
   main-content (more products)
