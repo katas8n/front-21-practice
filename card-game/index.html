@@ -9,36 +9,74 @@
     </head>
     <body>
         <div id="app">
-            <header class="header">
-                <nav class="nav">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">Register</a>
-                </nav>
+            <section class="header-wrapper">
+                <header class="header">
+                    <div class="logo-wrapper">
+                        <span class="logo">SAVANA</span>
+                    </div>
 
-                <div class="input-wrapper">
-                    <label for="search-panel">Search</label>
+                    <nav class="nav">
+                        <a href="#" class="nav-link">About</a>
+                        <a href="#" class="nav-link">Directions</a>
+                        <a href="#" class="nav-link">Trainers</a>
+                        <a href="#" class="nav-link">Groups</a>
+                        <a href="#" class="nav-link">Contacts</a>
+                    </nav>
+                </header>
 
-                    <input
-                        id="search-panel"
-                        type="text"
-                        class="input"
-                        name="search-panel"
+                <div class="banner">
+                    <div class="banner-title-wrapper">
+                        <span class="banner-title"> Ballet school </span>
+                    </div>
+
+                    <div class="banner-description-wrapper">
+                        <p class="banner-description">
+                            Best place to learn ballet
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-wrapper">
+                <div class="video">
+                    <img
+                        src="./public/icons/play.svg"
+                        alt="Something went wrong !"
+                        class="play-icon"
                     />
                 </div>
-            </header>
+            </section>
 
-            <div class="container">
-                <aside class="sidebar"></aside>
+            <main class="main">
+                <span class="title">About us </span>
 
-                <main class="main"></main>
-            </div>
+                <p class="paragraph">
+                    Ballet is the art of charm and sophistication.
+                </p>
 
-            <footer class="footer">
-                <nav class="nav">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">Register</a>
-                </nav>
-            </footer>
+                <p class="paragraph">
+                    Our ballet school provides an opportunity to learn
+                    professional ballet for both younger students and adults.
+                    Our trainers have a high level of skills and professionalism
+                    in their field. The ballet school “Darly” is equipped with a
+                    professional ballet stage covering, modern sound and
+                    lighting equipment.
+                </p>
+
+                <p class="paragraph">
+                    Our students take first place in tournaments and
+                    performances. They have the opportunity to travel around the
+                    world and play in performances on the big stage.
+                </p>
+
+                <div class="main-img-wrapper">
+                    <img
+                        src="./public/images/abour-us.png"
+                        alt=""
+                        class="main-img"
+                    />
+                </div>
+            </main>
         </div>
 
         <script type="module" src="./main.js"></script>
