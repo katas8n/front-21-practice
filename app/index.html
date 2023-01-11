@@ -1,54 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css" />
-        <title>Application</title>
-    </head>
-    <body>
-        <div id="app">
-            <header class="header">
-                <nav class="nav">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">About</a>
-                    <a href="./page/login.html" class="nav-link">Login</a>
-                </nav>
-            </header>
-            <section class="container">
-                <aside class="sidebar">
-                    <div class="input-wrapper">
-                        <input
-                            type="text"
-                            placeholder="Searching ..."
-                            class="input"
-                        />
-                    </div>
 
-                    <button class="button">Send</button>
-                </aside>
-                <main class="main">
-                    <div class="banner-wrapper">
-                        <div class="banner__title-wrapper">
-                            <span class="banner__title">Sale 25%</span>
-                        </div>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./style.css" />
+	<title>Application</title>
+</head>
 
-                        <img
-                            src="./public/vite.svg"
-                            alt="There is nothing here yet"
-                            class="banner"
-                        />
+<body>
+	<div id="app">
+		<header class="header">
+			<nav class="nav">
+				<a href="#" class="nav-link">Home</a>
+				<a href="#" class="nav-link">About</a>
+				<a href="./page/login.html" class="nav-link">Login</a>
+			</nav>
+		</header>
+		<section class="container">
+			<aside class="sidebar">
+				<div class="input-wrapper">
+					<input type="text" placeholder="Searching ..." class="search" />
+					<p>
+						<button class="button" type="submit" value="Search">Search
+						</button>
+					</p>
+				</div>
+				<form class="form__sidebar" action="post">
+					<p class="title-form">Are you</p>
 
-                        <div class="button-wrapper">
-                            <button class="button">Get</button>
-                        </div>
-                    </div>
-                </main>
-            </section>
-            <footer class="footer">
-                <span class="footer__title"> Copyright free (c) 2023 </span>
-            </footer>
-        </div>
-    </body>
+					<p class="input-sidebar">
+						<input type="radio" name="sex" id="man">
+						<label for="man"> Man </label>
+					</p>
+					<p class="input-sidebar">
+						<input type="radio" name="sex" id="woman">
+						<label for="man">Woman</label>
+					</p>
+
+					<p class="title-form">
+						What is your age
+					</p>
+
+					<p class="input-sidebar">
+						<input type="radio" name="age" id="thirty" checked>
+						<label for="man">18-30</label>
+					</p>
+					<p class="input-sidebar">
+						<input type="radio" name="age" id="fourty">
+						<label for="man">31-40</label>
+					</p>
+					<p class="input-sidebar">
+						<input type="radio" name="age" id="fifty">
+						<label for="man">41-50</label>
+					</p>
+					<p class="input-sidebar">
+						<input type="radio" name="age" id="sixty">
+						<label for="man">more then 50</label>
+					</p>
+
+
+
+					<legend class="title-form">What is your like color</legend>
+
+					<div class="input-sidebar">
+						<input type="checkbox" name="color">
+						<label for="color">red</label>
+					</div>
+					<div class="input-sidebar">
+						<input type="checkbox" name="color">
+						<label for="color">orange</label>
+					</div>
+					<div class="input-sidebar">
+						<input type="checkbox" name="color">
+						<label for="color">yellow</label>
+					</div>
+					<div class="input-sidebar">
+						<input type="checkbox" name="color">
+						<label for="color">grin</label>
+					</div>
+					<div class="input-sidebar">
+						<input type="checkbox" name="color">
+						<label for="color">blue</label>
+					</div>
+					<div class="input-sidebar">
+						<input type="checkbox" name="color">
+						<label for="color">dark blue</label>
+					</div>
+					<div class="input-sidebar">
+						<input type="checkbox" name="color">
+						<label for="color">purple</label>
+					</div>
+
+
+				</form>
+				<button class="button" type="submit">Send</button>
+			</aside>
+
+			<main class="main">
+				<div class="banner-wrapper">
+					<div class="banner__title-wrapper">
+						<span class="banner__title">Sale 25%</span>
+					</div>
+
+					<img src="./public/images/vite.svg" alt="There is nothing here yet" class="banner" />
+					<div class="text__wrapper">
+						<span class="banner-text">Catch your luck!</span>
+					</div>
+					<div class="button-wrapper">
+						<button class="button">Get</button>
+					</div>
+				</div>
+			</main>
+		</section>
+		<footer class="footer">
+			<nav class="nav__footer">
+				<ul class="links__footer">
+					<li class="link__footer">
+						<a href="#" class="icon-link">
+							<img src="./public/images/telegram.png" alt="Something went wrong" class="img-link">
+							<span class="text-link">Telegram</span>
+						</a>
+					</li>
+					<li class="link__footer">
+						<a href="#" class="icon-link">
+							<img src="./public/images/instagram.png" alt="Something went wrong" class="img-link">
+							<span class="text-link">Instagram</span>
+						</a>
+					</li>
+					<li class="link__footer">
+						<a href="#" class="icon-link">
+							<img src="./public/images/Viber.png" alt="Something went wrong" class="img-link">
+							<span class="text-link">Viber</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<span class="footer__title"> Copyright free (c) 2023 </span>
+		</footer>
+	</div>
+</body>
+
 </html>
