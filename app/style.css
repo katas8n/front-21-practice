@@ -148,3 +148,63 @@ a {
 /* Alex from 576px to 768px */
 /* Evgenia from 768px to 1200px */
 /* Lera from 1200 > */
+
+
+
+@media (max-width:576px) {
+
+  .header , .footer , .button {
+    background: rgb(15, 41, 170);
+  }
+  
+  .nav {
+    width: 100%;
+   flex-direction: column;
+  }
+
+  .nav-link {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center  ;
+  }
+
+  .nav-link:first-child {
+    margin-top: 0;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+
+  .input {
+    width: 100%;
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: 2px solid rgb(78, 100, 199);
+    padding: .2rem;
+  }
+
+  .main {
+    margin-left: 0;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 120px;
+  }
+
+  .footer__title {
+    font-size: 1rem;
+  }
+}
