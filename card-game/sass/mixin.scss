@@ -1,0 +1,18 @@
+@mixin flexbox ($justifyContent , $alignItems , $width) {
+    display: flex ;
+    justify-content: $justifyContent ;
+    align-items: $alignItems ;
+    width: $width or 100% ;
+}
+
+@mixin rotate ($deg) {
+    transform: rotate($deg);
+}
+
+// @mixin bg-color ($width , $height) {
+//     @if($width > $height) {
+//         background: red;
+//     } @else {
+//         background: blue;
+//     }
+// }
