@@ -200,6 +200,10 @@ a {
 		padding: .4rem 2rem;
 	}
 
+	.title-form {
+		margin-top: 10px;
+	}
+
 	.form__sidebar {
 		margin-top: 2rem;
 	}
@@ -214,14 +218,95 @@ a {
 	}
 
 	.banner-wrapper {
-
 		display: flex;
-		justify-self: center;
+		justify-content: center;
 		flex-direction: column;
+		overflow: hidden;
+	}
+
+	.banner__title {
+		font-size: 1.7rem;
+		font-family: 'Courier New', Courier, monospace;
+		color: orchid;
+		font-weight: 700;
+		text-shadow: 3px 4px 2px pink;
+		position: relative;
+		top: 300;
+	}
+
+	.banner__title {
+		animation-name: title;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes title {
+		from {
+			top: 300px;
+			color: antiquewhite;
+		}
+
+		50% {
+			top: 0;
+			font-size: 2rem;
+			color: rgb(211, 107, 15);
+		}
+
+		to {
+			top: 0;
+			font-size: 1.7rem;
+			color: orchid;
+			font-weight: 700;
+			text-shadow: 3px 4px 2px pink;
+		}
+
+	}
+
+
+
+	.banner-text {
+		font-size: 2rem;
+		font-family: 'Courier New', Courier, monospace;
+		color: rgb(89, 11, 214);
+		font-weight: 900;
+		text-shadow: 3px 2px 3px rgb(65, 6, 54);
+		position: relative;
+		left: 400px;	
+	}
+
+	.banner-text {
+		animation-name: text;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+		animation-delay: 1.5s;
+	}
+
+	@keyframes text {
+		from {
+			left: 400px;
+			color: antiquewhite;
+		}
+
+		50% {
+			left: 0;
+			font-size: 2rem;
+			color: rgb(211, 107, 15);
+		}
+
+		to {
+			left: 0;
+			font-size: 2rem;
+			color: rgb(89, 11, 214);
+			font-weight: 900;
+			text-shadow: 3px 2px 3px rgb(65, 6, 54);
+		}
+
 	}
 
 	.footer {
-		margin-top: 10px;
+		margin-top: 50px;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
@@ -230,7 +315,6 @@ a {
 	.footer__title {
 		font-size: 1rem;
 		margin-top: 1rem;
-
 	}
 
 	.icon-link {
