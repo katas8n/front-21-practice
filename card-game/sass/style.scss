@@ -20,10 +20,6 @@ a {
     color: inherit;
 }
 
-body {
-    // overflow-x: hidden;
-}
-
 .main ,.directions , 
 .special-title ,.groups-wrapper,.form-wrapper ,.footer {
     padding: $padding-main;
@@ -325,41 +321,3 @@ body {
     padding-top: $padding-xl ;
 }
 
-
-
-// .header {
-//     @include flexbox(space-between,center , 100%);
-//     background: $primary-bg-color;
-//     color: $primary-text-color;
-//     padding: $padding-m + .5rem;
-
-//     .nav {
-//         @include flexbox(space-around,center , 30%);
-
-//         &-link {
-//             @include rotate(-13deg);
-//             color: $primary-text-color;
-//         }
-//     }
-// }
-
-// .footer {
-//     padding: $padding-m;
-//     background: $secondary-bg-color;
-
-//     .nav {
-        
-//         @include flexbox(space-around,center , 30%);
-//         @include rotate(10deg);
-//         padding: $padding-s;
-        
-//         &-link {
-//             color: $third-text-color;
-//             text-decoration: none;
-//         }
-//     }
-// }
-
-// .footer {
-//     @include bg-color(200px , 300px)
-// }
