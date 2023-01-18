@@ -275,11 +275,57 @@ body {
     padding-bottom: 0px;
 }
 
-.footer-title {
+.footer-nav-wrapper ,.license-wrapper {
+    display: flex;
     margin-top: $padding-l;
-    font-family: 'inter';
-    font-weight: 400;
+    align-items: center;
+    
 }
+
+.footer-nav , .issues {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: $fs-s;
+    color: $font-color-gray;
+}
+
+.footer-title ,.license {
+    font-family: 'inter';
+    font-size: $fs-m * 2;
+    margin-right: 168px;
+}
+
+.license {
+    font-size: $fs-xs - 2px;
+    margin-right: 235px;
+}
+
+.logo-wrapper {
+    margin-top: 43px;
+}
+
+.logo {
+    width: 18px;
+}
+
+.logo:first-child {
+    margin-right:  25px;
+
+}
+
+.footer-link{
+    margin: 0px 30px;
+}
+
+.issue {
+    font-size: 16px; margin: 0px 15px;
+}
+
+.license-wrapper {
+    padding-top: $padding-xl ;
+}
+
+
 
 // .header {
 //     @include flexbox(space-between,center , 100%);
