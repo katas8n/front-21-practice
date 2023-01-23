@@ -1,0 +1,22 @@
+@mixin wrapper ($jc , $ai : none){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin grid ($col , $amount) {
+    display: grid;
+    grid-template-columns: repeat($coln , $amount);
+}
+
+
+@mixin font($size , $family : inherit , $color : inherit) {
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+}
+
+@mixin size ($width : 100%, $height : 100%) {
+    width : $width;
+    height: $height;
+}

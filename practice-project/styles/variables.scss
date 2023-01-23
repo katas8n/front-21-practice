@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "dancing-script";
+    src: url("../public/fonts/dancing-script/static/DancingScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "inter";
+    src: url("../public/fonts/inter/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nanum";
+    src: url("../public/fonts/nanum/NanumMyeongjo-Regular.ttf");
+}
+// Font-family
+$font-family-logo : "dancing-script" ;
+$font-family-primary : "inter" ;
+$font-family-secondary : "nanum" ;
+
+// Font-size
+$font-size-xxl : 70px ; 
+$font-size-xl : 45px ; 
+$font-size-l : 42px ; 
+$font-size-m : 20px ; 
+$font-size-s : 18px ;
+$font-size-xs : 16px ;
+
+// Paddings
+$padding-xxl : 160px ;
+$padding-xl : 60px ;
+$padding-l : 40px ;
+$padding-m : 30px ;
+$padding-s : 20px ;
+$padding-xs : 18px ;
+
+// Margins
+$margin-xxl : 160px ;  
+$margin-xl : 60px ;
+$margin-l : 40px ; 
+$margin-m : 30px ; 
+$margin-s : 20px ; 
+$margin-xs : 18px ;
+
+// Background 
+$bg-main : #F5F5F5 ;
+$bg-secondary : rgba(223, 223, 223, 1) ;
+
+// txt-color
+$txt-color-main : #2E2927 ;
+$txt-color-secondary :  #777777 ;
+
+// border-color
+$border-color : #2E2927 ;

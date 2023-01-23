@@ -22,8 +22,7 @@ a {
 
 .main ,.directions , 
 .special-title ,.groups-wrapper,.form-wrapper ,.footer {
-    padding: $padding-main;
-    padding-top: $padding-xxl;
+    @include paddings($padding-xxl,$padding-main)
 }
 
 .main ,.directions ,
@@ -38,17 +37,18 @@ a {
     background: $bg-color;
 }
 
-.header-wrapper {
-    background-image: url('../public/images/background-1.png');
-    height: 840px;
-    background-size: cover;
-}
-
 .header {
-    display: flex;
-    justify-content: space-between;
+
+    @include flex(space-between , start, row);
     padding: $padding-l;
     margin: 0px 128px - $padding-l;
+
+    &-wrapper {
+        background-image: url('../public/images/background-1.png');
+        height: 840px;
+        background-size: cover;
+    }
+
     
 }
 
@@ -60,31 +60,29 @@ a {
 .nav {
     font-size: $fs-s;
     font-family: $kaiseiOpti-ff;
-}
 
-.nav-link:not(.nav-link:last-child) {
-
-    padding: 0px $padding-nav;
+    &-link:not(.nav-link:last-child) {
+        padding: 0px $padding-nav;
+    }
+    
 }
 
 .banner {
+    @include flex(center , start, column);
     padding: 0px $padding-main;
-    display: flex;
-    flex-direction: column;
     height: 65%;
-    justify-content: center;
 
-}
-
-.banner-title {
-    font-size: $fs-xxl;
-    font-family: $kaiseiOpti-ff;
-}
-
-.banner-description {
-    font-size: $fs-s;
-    font-family: $assistant-ff;
-    margin-top: $margin-m ;
+   &-title {
+        font-size: $fs-xxl;
+        font-family: $kaiseiOpti-ff;
+    }
+    
+   &-description {
+        font-size: $fs-s;
+        font-family: $assistant-ff;
+        margin-top: $margin-m ;
+    }
+    
 }
 
 .video {
@@ -101,7 +99,6 @@ a {
     transform: translate(-50% , -50%);
 }
 
-
 .title {
     font-size: $fs-xxl-v2;
 }
@@ -113,36 +110,41 @@ a {
     font-family: $assistant-ff;
     line-height: 23px;
     font-size: $fs-s ;
-} 
 
-.paragraph:first-of-type {
+    &:first-of-type {
     margin-top: $margin-xl;
-}
+    }
 
-.main-img-wrapper {
-    display: flex;
-    justify-content: center;
-}
+} 
 
 .main-img {
     width: 1256px;
     margin-top: $margin-xl;
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.direction-description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.direction {
 
-.direction-title {
-    margin-top: $padding-xl;
-    font-size: $fs-xl;
-}
+   &-description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+   &-title {
+        margin-top: $padding-xl;
+        font-size: $fs-xl;
+    }
+    
+   &-paragraph {
+        margin-top: $padding-nav;
+        width: 736px;
+    }
 
-.direction-paragraph {
-    margin-top: $padding-nav;
-    width: 736px;
 }
 
 .direction-img {
@@ -156,23 +158,26 @@ a {
 }
 
 .tainers-info {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex( space-evenly , start ,row);
     padding-bottom: 0;
 }
 
-.trainer-photo {
-    width: 363px;
+.trainer {
+    &-photo {
+        width: 363px;
+    }
+    
+    &-info {
+        padding: $padding-m;
+    }
+    
+    &-name {
+        text-align: center;
+        font-size: $fs-xl;
+    }
+    
 }
 
-.trainer-info {
-    padding: $padding-m;
-}
-
-.trainer-name {
-    text-align: center;
-    font-size: $fs-xl;
-}
 
 .arrow-text {
     font-size: $fs-m;
@@ -180,9 +185,7 @@ a {
 }
 
 .arrow-wrapper {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    @include flex( end , center ,row);
     padding: $padding-xl;
 
 }
@@ -272,15 +275,13 @@ a {
 }
 
 .footer-nav-wrapper ,.license-wrapper {
-    display: flex;
+    @include flex(start , center, row);
     margin-top: $padding-l;
-    align-items: center;
     
 }
 
 .footer-nav , .issues {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex(space-evenly , start, row);
     font-size: $fs-s;
     color: $font-color-gray;
 }

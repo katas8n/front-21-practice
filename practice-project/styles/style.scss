@@ -1,0 +1,127 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#app {
+    width: 1512px;
+    font-family: $font-family-primary;
+    background: $bg-main;
+    color: $txt-color-main;
+}
+
+.title {
+    @include font ($font-size-l ,$font-family-secondary) ;
+}
+
+.btn {
+    @include font ($font-size-s) ;
+    padding: $padding-s ($padding-xl + 10px) ;
+    background: none;
+    border: none;
+    border: 1px solid $border-color ;
+}
+
+.header {
+    padding: $padding-xl - 4px;
+    @include wrapper(space-between, center);
+
+    .logo {
+        @include font ($font-size-xl , $font-family-logo);
+    }
+
+    .nav {
+        @include font ($font-size-s);
+
+        &__link {
+            color: $txt-color-secondary;
+            padding: 0px ($padding-m + 5px);
+        }
+    }
+
+    .items {
+        @include wrapper(space-between, center) ;
+    
+        .item {
+            padding: 0px $padding-s;
+            &__icon {
+                @include size (20px ,20px);
+            }
+        }
+    } 
+}
+
+.preview {
+    @include wrapper(space-between , center);
+    padding: $padding-xl - 4px;
+    &__title {
+        @include font($font-size-xxl + 2px , $font-family-secondary); 
+        text-transform: uppercase;
+    }
+
+    &__paragraph {
+        @include font($font-size-s);
+        margin-top: $margin-s;
+        color: $txt-color-secondary ;
+    }
+
+    .btn {
+        &-wrapper {
+            margin-top: $margin-l + 10px;
+        }
+    }
+
+    &__img {
+        @include size(655px ,655px);
+
+        &-wrapper {
+            padding: $padding-xs;
+        }
+    }
+}
+
+.about {
+    @include wrapper(space-between ,center);
+    padding: $padding-xl - 4px;
+    &__img {
+        @include size(580px ,665px);
+        &-wrapper {
+            
+        }
+    }
+
+    &__content {
+        @include size(564px);
+        line-height: 150%;
+        .btn-wrapper {
+            margin-top: $margin-xl;
+        }
+    }
+}
+
+.title {
+    @include font($font-size-l,$font-family-secondary);
+    text-transform: uppercase;
+}
+
+.paragraphs {
+    @include font($font-size-s ,inherit ,$txt-color-secondary);
+
+    .paragraph {
+        margin-top: $margin-l ;
+
+    }
+}
