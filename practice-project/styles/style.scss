@@ -168,3 +168,76 @@ body {
 .banner {
     @include size(100%);
 }
+
+.catalog {
+    margin-top: $margin-xxl;
+    @include wrapper(center , center);
+    flex-direction: column;
+
+    &__images {
+        margin-top:$margin-xl ;
+        @include grid(3 , 1fr , $padding-l);
+    
+    }
+
+    &__image {
+        @include size(440px);
+    }
+
+    &__title {
+        @include wrapper(center , center);
+        text-transform: uppercase;
+        margin-top:$margin-l - 3px ;
+        font-size: $font-size-m;
+    }
+}
+
+.poll {
+    .title {
+        @include wrapper(center , center );
+
+        margin-top: $margin-xxl;
+    }
+
+    &__customers{
+        padding: $padding-xl - 4px;
+    }
+
+    &__customer {
+        @include size(474px);
+        background: rgba(223, 223, 223, 1);
+    }
+
+    &__customer:nth-child(3) {
+        background:$bg-main;
+        border:1px rgba(119, 119, 119, 1) solid;
+    }
+}
+
+.customer {
+
+    &__data {
+        // @include wrapper();
+
+    }
+
+    &__name {
+        text-transform: uppercase;
+        @include font($font-size-m,$font-size-m,$txt-color-secondary )
+    }
+
+    &__image {
+        @include size(50px);
+        margin-right:$margin-xs - 4px ;
+    }
+
+    &__identification {
+        @include wrapper(start , center);
+        padding: $padding-m - 2px;
+    }
+    
+    &__comment {
+        padding: $padding-m - 2px;
+        padding-top: 0px;
+    }
+}

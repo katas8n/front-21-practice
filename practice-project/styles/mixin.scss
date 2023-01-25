@@ -4,9 +4,10 @@
     align-items: $ai;
 }
 
-@mixin grid ($col , $amount) {
+@mixin grid ($col , $amount , $gap) {
     display: grid;
-    grid-template-columns: repeat($coln , $amount);
+    grid-template-columns: repeat($col , $amount);
+    gap: $gap;
 }
 
 
