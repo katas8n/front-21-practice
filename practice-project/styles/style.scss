@@ -16,6 +16,11 @@ a {
     color: inherit;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #app {
     width: 1512px;
     font-family: $font-family-primary;
@@ -124,4 +129,42 @@ a {
         margin-top: $margin-l ;
 
     }
+}
+
+.choose {
+    padding: $padding-xl * 2;
+
+    .title {
+        @include wrapper(center);
+    }
+
+    .reasons {
+        @include wrapper(space-between);
+        margin-top: $margin-xl;
+
+    }
+        
+    .reason {
+        @include wrapper(center);
+        padding: 0px $padding-xl;
+        &__image {
+            @include size(36px , 39px);
+            margin-right: $margin-s + 5px;
+        }
+
+        &__title {
+            @include font($font-size-s  ,$font-family-secondary ,$txt-color-main );
+            text-transform: uppercase;
+        }
+
+        &__text {
+            line-height: 146%;
+            margin-top: $margin-s;
+            @include font($font-size-xs , $font-family-primary ,$txt-color-secondary)
+        }
+    }
+}
+
+.banner {
+    @include size(100%);
 }

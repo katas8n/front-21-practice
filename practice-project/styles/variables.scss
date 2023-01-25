@@ -12,6 +12,18 @@
     font-family: "nanum";
     src: url("../public/fonts/nanum/NanumMyeongjo-Regular.ttf");
 }
+
+// Background 
+$bg-main : #F5F5F5 ;
+$bg-secondary : rgba(223, 223, 223, 1) ;
+
+// txt-color
+$txt-color-main : #2E2927 ;
+$txt-color-secondary :  #777777 ;
+
+// border-color
+$border-color : #2E2927 ;
+
 // Font-family
 $font-family-logo : "dancing-script" ;
 $font-family-primary : "inter" ;
@@ -41,13 +53,3 @@ $margin-m : 30px ;
 $margin-s : 20px ; 
 $margin-xs : 18px ;
 
-// Background 
-$bg-main : #F5F5F5 ;
-$bg-secondary : rgba(223, 223, 223, 1) ;
-
-// txt-color
-$txt-color-main : #2E2927 ;
-$txt-color-secondary :  #777777 ;
-
-// border-color
-$border-color : #2E2927 ;
